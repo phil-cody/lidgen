@@ -1,25 +1,22 @@
-const reviewBlocks = document.querySelectorAll(".review__block");
+const container = document.querySelector(".example__review");
 
-reviewBlocks.forEach((block) => {
+container.addEventListener("click", (e) => {
+  const block = e.target.closest(".review__block");
+  if (!block) return;
+
   const content = block.querySelector(".review__text");
   if (!content) return;
 
-  block.addEventListener("click", () => {
-    const isOpen = content.style.maxHeight && content.style.maxHeight !== "0px";
+  const isOpen = content.style.maxHeight && content.style.maxHeight !== "0px";
 
-    if (isOpen) {
-      content.style.maxHeight = "0px";
-      block.classList.remove("active");
-      return;
-    }
+  document.querySelectorAll(".review__block").forEach((b) => {
+    const el = b.querySelector(".review__text");
+    if (el) el.style.maxHeight = "0px";
+    b.classList.remove("active");
+  });
 
-    reviewBlocks.forEach((b) => {
-      const el = b.querySelector(".review__text");
-      if (el) el.style.maxHeight = "0px";
-      b.classList.remove("active");
-    });
-
+  if (!isOpen) {
     block.classList.add("active");
     content.style.maxHeight = content.scrollHeight + "px";
-  });
+  }
 });
