@@ -903,7 +903,7 @@ img {
   background-image: url(./img/hero-bg.webp);
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .page__hero::before {
@@ -1338,7 +1338,7 @@ section:first-child {
   background-image: url(./img/losing-bg.webp);
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .losing .container {
