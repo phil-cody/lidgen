@@ -900,7 +900,7 @@ img {
 
 .page__hero {
   position: relative;
-  background-image: url(/img/hero-bg.webp);
+  background-image: url(./img/hero-bg.webp);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -1335,7 +1335,7 @@ section:first-child {
 }
 
 .page__losing {
-  background-image: url(/img/losing-bg.webp);
+  background-image: url(./img/losing-bg.webp);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -3582,8 +3582,8 @@ section:first-child {
     width: calc(100% + 80px);
     margin-right: -40px;
     margin-left: -40px;
-    scroll-padding-right: 40px;
-    scroll-padding-left: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .about__content {
