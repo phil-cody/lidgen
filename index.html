@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
   </head>
   <body>
@@ -245,7 +246,12 @@
               </div>
               <picture>
                 <source srcset="./img/hero.svg" type="image/svg" />
-                <img src="./img/hero.svg" alt class="hero__img" />
+                <img
+                  src="./img/hero.svg"
+                  alt
+                  class="hero__img"
+                  fetchpriority="high"
+                />
               </picture>
             </div>
           </div>
