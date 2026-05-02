@@ -1347,65 +1347,66 @@ section:first-child {
 
 .page__example .custom-background::after {
   content: "";
-  position: fixed;
+  position: absolute;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
   background:
     -o-radial-gradient(
       ellipse farthest-corner at 75% 89%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 0) 26.2%
-    ),
+    ) no-repeat,
     -o-radial-gradient(
         ellipse farthest-corner at 62% 78%,
         rgba(50, 73, 203, 1) 0%,
         rgba(0, 0, 0, 0) 12.2%
-      ),
+      ) no-repeat,
     -o-radial-gradient(
         circle farthest-corner at 10% 65%,
         rgba(50, 73, 203, 1) 0%,
         rgba(0, 0, 0, 1) 21%,
         rgba(0, 0, 0, 0) 27.8%
-      ),
+      ) no-repeat,
     -o-radial-gradient(
       circle farthest-corner at 12% 30%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 0) 31%
-    ),
+    ) no-repeat,
     -o-radial-gradient(
       circle farthest-corner at 68% 40%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 0) 31%
-    );
+    ) no-repeat;
   background:
     radial-gradient(
       ellipse farthest-corner at 75% 89%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 0) 26.2%
-    ),
+    ) no-repeat,
     radial-gradient(
       ellipse farthest-corner at 62% 78%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 0) 12.2%
-    ),
+    ) no-repeat,
     radial-gradient(
       circle farthest-corner at 10% 65%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 1) 21%,
       rgba(0, 0, 0, 0) 27.8%
-    ),
+    ) no-repeat,
     radial-gradient(
       circle farthest-corner at 12% 30%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 0) 31%
-    ),
+    ) no-repeat,
     radial-gradient(
       circle farthest-corner at 68% 40%,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 0) 31%
-    );
+    ) no-repeat;
+    background-size: 100% 500px, 100% 500px, 100% 500px, 100% 500px, 100% 500px;
 }
 
 .example::after,
