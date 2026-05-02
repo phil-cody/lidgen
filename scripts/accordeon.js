@@ -5,21 +5,21 @@ reviewBlocks.forEach((block) => {
   if (!content) return;
 
   block.addEventListener("click", () => {
-    const isActive = block.classList.contains("active");
+    const isOpen = content.style.maxHeight && content.style.maxHeight !== "0px";
+
+    if (isOpen) {
+      content.style.maxHeight = "0px";
+      block.classList.remove("active");
+      return;
+    }
 
     reviewBlocks.forEach((b) => {
-      b.classList.remove("active");
-
       const el = b.querySelector(".review__text");
       if (el) el.style.maxHeight = "0px";
+      b.classList.remove("active");
     });
 
-    if (!isActive) {
-      block.classList.add("active");
-
-      requestAnimationFrame(() => {
-        content.style.maxHeight = content.scrollHeight + "px";
-      });
-    }
+    block.classList.add("active");
+    content.style.maxHeight = content.scrollHeight + "px";
   });
 });

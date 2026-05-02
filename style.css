@@ -1624,7 +1624,7 @@ section:first-child {
 .review__text {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.35s ease;
+  transition: max-height 0.35s ease;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
