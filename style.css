@@ -1629,6 +1629,7 @@ section:first-child {
 
 .example__review .active .review__open {
   transform: rotate(180deg);
+  transition: all 0.3s ease;
 }
 
 .review__text {
