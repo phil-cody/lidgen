@@ -1338,75 +1338,51 @@ section:first-child {
 
 .page__example {
   position: relative;
+  z-index: 5;
 }
 
-.page__example .custom-background {
-  background: none;
-  max-height: 580px;
+.page__example .example__custom-background {
+  position: absolute;
+  background: url(./img/example-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 700px;
+  z-index: 0;
 }
 
-.page__example .custom-background::after {
+.page__example .example__custom-background::after {
   content: "";
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-  background:
-    -o-radial-gradient(
-      ellipse farthest-corner at 75% 89%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 0) 26.2%
-    ) no-repeat,
-    -o-radial-gradient(
-        ellipse farthest-corner at 62% 78%,
-        rgba(50, 73, 203, 1) 0%,
-        rgba(0, 0, 0, 0) 12.2%
-      ) no-repeat,
-    -o-radial-gradient(
-        circle farthest-corner at 10% 65%,
-        rgba(50, 73, 203, 1) 0%,
-        rgba(0, 0, 0, 1) 21%,
-        rgba(0, 0, 0, 0) 27.8%
-      ) no-repeat,
-    -o-radial-gradient(
-      circle farthest-corner at 12% 30%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 0) 31%
-    ) no-repeat,
-    -o-radial-gradient(
-      circle farthest-corner at 68% 40%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 0) 31%
-    ) no-repeat;
-  background:
-    radial-gradient(
-      ellipse farthest-corner at 75% 89%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 0) 26.2%
-    ) no-repeat,
-    radial-gradient(
-      ellipse farthest-corner at 62% 78%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 0) 12.2%
-    ) no-repeat,
-    radial-gradient(
-      circle farthest-corner at 10% 65%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 1) 21%,
-      rgba(0, 0, 0, 0) 27.8%
-    ) no-repeat,
-    radial-gradient(
-      circle farthest-corner at 12% 30%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 0) 31%
-    ) no-repeat,
-    radial-gradient(
-      circle farthest-corner at 68% 40%,
-      rgba(50, 73, 203, 1) 0%,
-      rgba(0, 0, 0, 0) 31%
-    ) no-repeat;
-    background-size: 100% 500px, 100% 500px, 100% 500px, 100% 500px, 100% 500px;
+  height: 200px;
+  bottom: 0;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    color-stop(40%, rgba(0, 0, 0, 0.2)),
+    color-stop(70%, rgba(0, 0, 0, 0.5)),
+    to(black)
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.5) 70%,
+    #000 100%
+  );
+  background: linear-gradient(
+    -180deg,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.2) 40%,
+    rgba(0, 0, 0, 0.5) 70%,
+    #000 100%
+  );
+  z-index: 100;
 }
 
 .example::after,
