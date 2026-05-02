@@ -1620,6 +1620,7 @@ section:first-child {
   -ms-flex-direction: column;
   flex-direction: column;
   cursor: pointer;
+  contain: layout paint;
 }
 .review__text {
   max-height: 0;
