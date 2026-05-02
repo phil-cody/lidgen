@@ -1556,24 +1556,22 @@ section:first-child {
   border: none;
 }
 
-.example__table td,
-.example__table th {
-  padding: 15px 0;
+.table__row:not(:last-child) {
   border-bottom: 1px solid #ffffff33;
 }
 
-.example__table tr:last-child td,
-.example__table tr:last-child th {
-  border-bottom: none;
+.example__table p,
+.example__table span {
+  padding: 15px 0;
 }
 
-.example__table th {
-  width: 186px;
+.example__table p {
+  min-width: 186px;
   font-weight: 500;
   vertical-align: top;
 }
 
-.example__table td {
+.example__table span {
   font-weight: 300;
 }
 
@@ -4048,13 +4046,8 @@ section:first-child {
     padding: 0;
   }
 
-  .example__table th {
-    width: 266px;
-  }
-
-  .example__table td,
-  .example__table th {
-    border-bottom-color: #171a2233;
+  .example__table p {
+    min-width: 266px;
   }
 
   .about__content {
@@ -5273,8 +5266,8 @@ section:first-child {
     font-size: 12px;
   }
 
-  .example__table th {
-    width: 126px;
+  .example__table p {
+    min-width: 126px;
   }
 
   .review__block {
