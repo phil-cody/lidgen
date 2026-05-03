@@ -3942,9 +3942,9 @@ section:first-child {
   }
 
   .efficiency__pretitle svg {
-  width: 14px;
-  height: 14px;
-}
+    width: 14px;
+    height: 14px;
+  }
 
   .efficiency__title h2 {
     font-size: 35px;
@@ -4037,6 +4037,10 @@ section:first-child {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+
+  .table__row:not(:last-child) {
+    border-bottom: 1px solid #171A2233;
   }
 
   .example__table,
