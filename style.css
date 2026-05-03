@@ -5246,6 +5246,8 @@ section:first-child {
     gap: 10px;
     align-self: center;
     justify-self: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .example__action-description svg {
@@ -5256,6 +5258,7 @@ section:first-child {
 
   .example__action-description p {
     font-size: 12px;
+    max-width: 210px;
   }
 
   .example__btn {
