@@ -858,10 +858,6 @@ img {
 
 .page__hero {
   position: relative;
-  background-image: url(./img/hero-bg.webp);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100% 100%;
 }
 
 .page__hero::before {
@@ -1050,6 +1046,10 @@ section:first-child {
 }
 
 .hero__content {
+  background-image: url(./img/hero-bg.webp);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
   position: relative;
   -ms-flex-pack: space-between;
   justify-content: space-between;
@@ -1219,6 +1219,10 @@ section:first-child {
 .source__item-content {
   flex-direction: column;
   gap: 20px;
+}
+
+.source__wrapp .source__item:nth-child(3) img {
+  padding-bottom: 20px;
 }
 
 .source__item.download {
@@ -3396,6 +3400,7 @@ section:first-child {
 }
 
 .btn {
+  image-rendering: pixelated;
   position: relative;
   text-decoration: none;
   display: -webkit-inline-box;
@@ -3756,6 +3761,10 @@ section:first-child {
     padding: 60px 0 0 0;
   }
 
+  .hero__content {
+    background-image: url(./img/hero-bg-tablet.webp);
+  }
+
   .hero__btn.btn {
     padding: 18px 62px;
   }
@@ -3865,6 +3874,10 @@ section:first-child {
   .source__wrapp .source__item:nth-child(2) img {
     align-self: flex-end;
     bottom: -40px;
+  }
+
+  .source__wrapp .source__item:nth-child(3) img {
+    padding-bottom: 0;
   }
 
   .source__item.step .source__name {
@@ -3998,7 +4011,7 @@ section:first-child {
   }
 
   .table__row:not(:last-child) {
-    border-bottom: 1px solid #171A2233;
+    border-bottom: 1px solid #171a2233;
   }
 
   .example__table,
@@ -4449,38 +4462,10 @@ section:first-child {
   }
 
   .page__hero {
-    background:
-      -o-radial-gradient(
-        circle farthest-corner at 21% 62%,
-        rgba(50, 73, 203, 1) 0%,
-        rgba(0, 0, 0, 0) 36%
-      ),
-      -o-radial-gradient(
-          circle farthest-corner at 68% 42%,
-          rgba(50, 73, 203, 1) 0%,
-          rgba(0, 0, 0, 0) 17.4%
-        ),
-      -o-radial-gradient(
-          circle farthest-corner at 68% 81%,
-          rgba(50, 73, 203, 1) 0%,
-          rgba(0, 0, 0, 0) 25.1%
-        );
-    background:
-      radial-gradient(
-        circle farthest-corner at 21% 62%,
-        rgba(50, 73, 203, 1) 0%,
-        rgba(0, 0, 0, 0) 36%
-      ),
-      radial-gradient(
-        circle farthest-corner at 68% 42%,
-        rgba(50, 73, 203, 1) 0%,
-        rgba(0, 0, 0, 0) 17.4%
-      ),
-      radial-gradient(
-        circle farthest-corner at 68% 81%,
-        rgba(50, 73, 203, 1) 0%,
-        rgba(0, 0, 0, 0) 25.1%
-      );
+    background-image: url(./img/hero-bg-mobile.webp);
+    background-position: bottom center;
+    background-size: 768px 910px;
+    background-repeat: no-repeat;
   }
 
   .page__hero::before {
@@ -4492,6 +4477,8 @@ section:first-child {
   }
 
   .hero__content {
+    background: none;
+    padding-bottom: 550px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
