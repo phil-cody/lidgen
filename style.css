@@ -1306,6 +1306,9 @@ section:first-child {
 .page__example .example__custom-background {
   position: absolute;
   background: url(./img/example-bg.webp);
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 100%;
@@ -1337,13 +1340,14 @@ section:first-child {
     rgba(0, 0, 0, 0.5) 70%,
     #000 100%
   );
-  background: linear-gradient(
-    -180deg,
-    rgba(0, 0, 0, 0) 0,
-    rgba(0, 0, 0, 0.2) 40%,
-    rgba(0, 0, 0, 0.5) 70%,
-    #000 100%
-  );
+  background:
+    linear-gradient(
+      -180deg,
+      rgba(0, 0, 0, 0) 0,
+      rgba(0, 0, 0, 0.2) 40%,
+      rgba(0, 0, 0, 0.5) 70%,
+      #000 100%
+    );
   z-index: 100;
 }
 
@@ -1420,6 +1424,17 @@ section:first-child {
   gap: 20px;
   color: #fff;
   padding: 120px 0 0 0;
+}
+
+.example__content::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 70px);
+  left: -30px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 92.2%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 7.8%);
 }
 
 .example__title {
@@ -1609,10 +1624,6 @@ section:first-child {
 }
 
 .page__losing {
-  background-image: url(./img/losing-bg.webp);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% 100%;
   position: relative;
 }
 
@@ -1683,6 +1694,10 @@ section:first-child {
 
 .losing .container {
   height: 100%;
+  background-image: url(./img/losing-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
 }
 
 .losing__content {
@@ -1826,6 +1841,17 @@ section:first-child {
   gap: 15px;
   position: relative;
   z-index: 5;
+}
+
+.efficiency__content::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: calc(100% + 70px);
+  left: -30px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 92.2%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 7.8%);
 }
 
 .efficiency__pretitle {
@@ -2001,12 +2027,15 @@ section:first-child {
 .efficiency__custom-background {
   position: absolute;
   inset: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1440px;
   width: 100%;
   height: 100%;
   z-index: 0;
   pointer-events: none;
   background: -o-radial-gradient(
-      0% 67%,
+      15% 67%,
       circle,
       rgba(50, 73, 203, 1) 0%,
       rgba(0, 0, 0, 1) 32%
@@ -2017,7 +2046,7 @@ section:first-child {
       rgba(0, 0, 0, 1) 30.4%
     );
   background:
-    radial-gradient(circle at 0% 67%, rgba(50, 73, 203, 1) 0%, transparent 32%),
+    radial-gradient(circle at 15% 67%, rgba(50, 73, 203, 1) 0%, transparent 32%),
     radial-gradient(
       ellipse closest-corner at 41% 45%,
       rgba(50, 73, 203, 1) 0%,
@@ -2239,6 +2268,17 @@ section:first-child {
   height: 490px;
 }
 
+.callback__content::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: calc(100% + 70px);
+  left: -30px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 92.2%, rgba(0, 0, 0, 1) 100%),
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 7.8%);
+}
+
 .callback__col {
   position: relative;
   z-index: 3;
@@ -2318,6 +2358,9 @@ section:first-child {
 .custom-background {
   position: absolute;
   inset: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1440px;
   width: 100%;
   height: 100%;
   z-index: 0;
@@ -2440,6 +2483,7 @@ section:first-child {
       rgba(7, 18, 70, 0) 100%
     ),
     linear-gradient(180deg, #020816 0, #061238 45%, #040b25 100%);
+  background-size: contain;
 }
 
 .custom-background::after {
