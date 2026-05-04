@@ -1,13 +1,7 @@
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url(/fonts/Manrope-Bold.eot);
-  src:
-    local("/fonts/Manrope-Bold"),
-    local("/fonts/Manrope-Bold"),
-    url(/fonts/Manrope-Bold.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Manrope-Bold.woff) format("woff"),
-    url(/fonts/Manrope-Bold.ttf) format("truetype");
+  src: url(./fonts/Manrope-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
 }
@@ -15,13 +9,7 @@
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url(/fonts/Manrope-ExtraBold.eot);
-  src:
-    local("/fonts/Manrope-ExtraBold"),
-    local("/fonts/Manrope-ExtraBold"),
-    url(/fonts/Manrope-ExtraBold.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Manrope-ExtraBold.woff) format("woff"),
-    url(/fonts/Manrope-ExtraBold.ttf) format("truetype");
+  src: url(./fonts/Manrope-ExtraBold.woff2) format("woff2");
   font-weight: 800;
   font-style: normal;
 }
@@ -29,13 +17,7 @@
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url(/fonts/Manrope-ExtraLight.eot);
-  src:
-    local("/fonts/Manrope-ExtraLight"),
-    local("/fonts/Manrope-ExtraLight"),
-    url(/fonts/Manrope-ExtraLight.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Manrope-ExtraLight.woff) format("woff"),
-    url(/fonts/Manrope-ExtraLight.ttf) format("truetype");
+  src: url(./fonts/Manrope-ExtraLight.woff2) format("woff2");
   font-weight: 200;
   font-style: normal;
 }
@@ -43,13 +25,7 @@
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url(/fonts/Manrope-Medium.eot);
-  src:
-    local("/fonts/Manrope-Medium"),
-    local("/fonts/Manrope-Medium"),
-    url(/fonts/Manrope-Medium.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Manrope-Medium.woff) format("woff"),
-    url(/fonts/Manrope-Medium.ttf) format("truetype");
+  src: url(./fonts/Manrope-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
 }
@@ -57,13 +33,7 @@
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url(/fonts/Manrope-Light.eot);
-  src:
-    local("/fonts/Manrope-Light"),
-    local("/fonts/Manrope-Light"),
-    url(/fonts/Manrope-Light.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Manrope-Light.woff) format("woff"),
-    url(/fonts/Manrope-Light.ttf) format("truetype");
+  src: url(./fonts/Manrope-Light.woff2) format("woff2");
   font-weight: 300;
   font-style: normal;
 }
@@ -71,13 +41,7 @@
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url(/fonts/Manrope-SemiBold.eot);
-  src:
-    local("/fonts/Manrope-SemiBold"),
-    local("/fonts/Manrope-SemiBold"),
-    url(/fonts/Manrope-SemiBold.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Manrope-SemiBold.woff) format("woff"),
-    url(/fonts/Manrope-SemiBold.ttf) format("truetype");
+  src: url(./fonts/Manrope-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-style: normal;
 }
@@ -85,13 +49,7 @@
 @font-face {
   font-family: Manrope;
   font-display: swap;
-  src: url(/fonts/Manrope-Regular.eot);
-  src:
-    local("/fonts/Manrope-Regular"),
-    local("/fonts/Manrope-Regular"),
-    url(/fonts/Manrope-Regular.eot?#iefix) format("embedded-opentype"),
-    url(/fonts/Manrope-Regular.woff) format("woff"),
-    url(/fonts/Manrope-Regular.ttf) format("truetype");
+  src: url(./fonts/Manrope-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
