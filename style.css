@@ -1784,6 +1784,7 @@ section:first-child {
   );
   position: relative;
   width: fit-content;
+  backdrop-filter: blur(10px);
 }
 
 .losing__flaw img {
